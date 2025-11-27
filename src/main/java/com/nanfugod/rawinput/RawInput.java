@@ -38,9 +38,9 @@ public class RawInput {
 
         lastMoveTime = new long[mice.size()];
 
-        FMLLog.info("Found " + mice.size() + " mouse devices:");
+        FMLLog.info("[RawInput] Found " + mice.size() + " mouse devices:");
         for (int i = 0; i < mice.size(); i++) {
-            FMLLog.info("  #" + i + ": " + mice.get(i).getName());
+            FMLLog.info("[RawInput]   #" + i + ": " + mice.get(i).getName());
         }
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -85,7 +85,7 @@ public class RawInput {
             activeMouse = mice.get(bestMouse);
             autoSelected = true;
 
-            FMLLog.info("✔ Auto-selected mouse: " + activeMouse.getName());
+            FMLLog.info("[RawInput] Auto-selected mouse: " + activeMouse.getName());
         }
     }
 }
