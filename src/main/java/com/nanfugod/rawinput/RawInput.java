@@ -64,7 +64,6 @@ public class RawInput {
             Mouse m = mice.get(i);
             m.poll();
 
-            // 2. 如果有移动
             int dx = m.getX().getPollData() != 0 ? 1 : 0;
             int dy = m.getY().getPollData() != 0 ? 1 : 0;
 
