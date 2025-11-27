@@ -2,7 +2,7 @@
 {
   "modid": "rawinput",
   "name": "Raw Input",
-  "description": "鼠标延迟/原生输入Mod",
+  "description": "Raw Mouse Input Mod",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "https://github.com/oAngel1118/RawInputMod",
